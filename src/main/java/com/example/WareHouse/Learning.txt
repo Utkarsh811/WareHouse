@@ -1,0 +1,2 @@
+@CrossOrigin annotations
+always write the annotation for Respository class carefully
