@@ -1,2 +1,7 @@
 @CrossOrigin annotations
 always write the annotation for Respository class carefully
+
+	private List<Hospital> hospitalList=new ArrayList<>(Arrays.asList(
+			new Hospital(1001, "Apollo Hospital", "Chennai", 3.8),
+			new Hospital(1002,"Global Hospital","Chennai", 3.5),
+			new Hospital(1003,"VCare Hospital","Bangalore", 3)));

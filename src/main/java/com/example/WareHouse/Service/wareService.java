@@ -3,6 +3,7 @@ package com.example.WareHouse.Service;
 import com.example.WareHouse.Repository.warerepo;
 import com.example.WareHouse.model.whose;
 import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -31,5 +32,13 @@ public class wareService {
   public whose updatepriceAndstockByid(int price, int stock, int id) {
     waredb.update(price, stock, id); //as update cannot return whose objject
     return waredb.findById(id); // so using findbyid to do so
+  }
+
+  public whose updatee(whose prdctdtails) {
+    return waredb.save(prdctdtails);
+  }
+
+  public whose deleteId(int id) {
+    return waredb.deleteById(id);
   }
 }

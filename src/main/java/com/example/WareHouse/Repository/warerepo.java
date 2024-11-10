@@ -20,4 +20,6 @@ public interface warerepo extends JpaRepository<whose, Integer> {
 
   @Query
   public whose findById(int id);
+
+  public whose deleteById(int id);
 }
