@@ -1,0 +1,33 @@
+how to compare 2 strings in java?
+.equals compares the string character by charracter
+== compares the string if pointing to same object iun memory
+Using .compareTo() method
+
+This method is used to compare two strings lexicographically.
+It returns 0 if the strings are equal, a negative value if the 
+first string is lexicographically less than the second, and a 
+positive value if it is greater.
+
+Using .equalsIgnoreCase()
+
+This method compares two strings, ignoring case differences.
+It returns true if the strings are equal, ignoring case; otherwise, it returns false.
+
+
+ String str1 = "Java";
+    String str2 = new String("Java"); //create new object
+    System.out.println(str1 == str2); //false
+    String str3 = "Java";
+    System.out.println(str1 == str3); //true poiting to same memory
+    String str4 = str3;
+    System.out.println(str4 == str3); //true
+
+
+Final Keyword Use Cases
+Constants: Declaring variables as final when they represent constants.
+Immutable Classes: Combining final with private fields and no setters helps create immutable classes.When you want to prevent classes to get extended
+Ensuring Method Behavior: Making certain methods final when you don’t want them to be overridden, preserving specific logic in subclasses.
+Preventing Inheritance: Declaring a class as final when you want to prevent it from being extended, like with the String class in Java.
+
+
+Hashing algorithm MD5,SHA256
